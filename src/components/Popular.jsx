@@ -16,7 +16,7 @@ function Popular() {
         setPopular(JSON.parse(check))
       }
       else{
-        const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9`)
+        const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=12`)
         const data = await api.json()
         localStorage.setItem('popular', JSON.stringify(data.recipes))
         setPopular(data.recipes)
@@ -41,6 +41,7 @@ function Popular() {
     ))
   return (
     <div className="wrapper">
+      <h3>POPULAR</h3>
       <Splide options={{
         perPage:4,
         arrows:false,
