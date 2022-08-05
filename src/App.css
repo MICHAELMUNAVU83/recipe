@@ -63,3 +63,7 @@
 .wrapper{
   margin: 4rem 0rem;
 }
+nav{
+  display: flex;
+  justify-content: space-evenly;
+}
