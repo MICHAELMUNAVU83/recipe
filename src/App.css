@@ -67,3 +67,26 @@ nav{
   display: flex;
   justify-content: space-evenly;
 }
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 3rem;
+}
+.grid img{
+  width: 100%;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
+.grid a{
+  text-decoration: none;
+
+}
+.grid h4{
+  text-align: center;
+  padding: 1rem;
+
+}
