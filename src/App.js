@@ -5,7 +5,7 @@ import Pages from './pages/Pages';
 function App() {
   return (
     <div >
-      <h1>hello</h1>
+      <h1>RECIPE</h1>
       <Pages/>
      
     </div>
