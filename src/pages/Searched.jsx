@@ -1,5 +1,6 @@
+import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams , Link } from "react-router-dom";
 
 function Searched() {
   const [searched, setSearched] = useState([]);
@@ -17,14 +18,19 @@ function Searched() {
   };
 
   return (
-    <div>
+    <motion.div   animate ={{opacity:1}}
+    initial={{opacity:0}}
+    exit={{opacity:0}}
+    transition= {{duration:0.8 }}
+    >
       {searched.map((eachSearched) => (
-        <div key={eachSearched}>
+        <div key={eachSearched.id}>
           <img src={eachSearched.image} alt="pic" />
           <p>{eachSearched.title}</p>
+          <Link to={'/recipe/'+ eachSearched.id}>SEE RECIPE</Link>
         </div>
       ))}
-    </div>
+    </motion.div>
   );
 }
 

@@ -45,6 +45,11 @@
  -o-border-radius:30px ;
  position: relative;
 }
+.detail-img{
+  height: 100px;
+  width: 100px;
+
+}
 .card img{
   height: 20rem;
   width: 20rem;
