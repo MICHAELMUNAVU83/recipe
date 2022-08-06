@@ -41,7 +41,7 @@ function Veggie() {
         <img src={recipe.image} alt="food " />
         <div className="nameAndLink">
           <p> {recipe.title} </p>
-          <Link to={"/recipe/" + recipe.id}>see recipe</Link>
+          <Link to={"/recipe/" + recipe.id}>view recipe</Link>
         </div>
       </div>
       </SplideSlide>
@@ -49,7 +49,7 @@ function Veggie() {
      
     ))
   return (
-    <div className="wrapper">
+    <div className="wrapper vegg">
       <h3>VEGGIES</h3>
       <OnDesktop> 
       <Splide options={{
@@ -67,7 +67,7 @@ function Veggie() {
       </OnDesktop>
       <OnMobile>
       <Splide options={{
-       perPage: 2,
+       perPage: 1,
        arrows: false,
        pagination: false,
        drag: "free",

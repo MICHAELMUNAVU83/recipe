@@ -30,7 +30,7 @@ function Cuisine() {
             <img src={rec.image} alt="rec " />
             <div className="nameAndLink">
               <p> {rec.title} </p>
-              <Link to={"/recipe/" + rec.id}>see recipe</Link>
+              <Link to={"/recipe/" + rec.id}>view recipe</Link>
             </div>
           </div>
         ))}
