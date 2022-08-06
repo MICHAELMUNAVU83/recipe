@@ -10,7 +10,6 @@ function Details() {
       `https://api.spoonacular.com/recipes/${id}/information?apiKey=${process.env.REACT_APP_API_KEY}`
     );
     const detailsJson = await fetchDetailsApi.json();
-    console.log(detailsJson);
     setDetails(detailsJson);
   };
   useEffect(() => {
@@ -36,7 +35,7 @@ function Details() {
             </div>
         {active==='instructions' && (
              <div className="summary">
-             <p dangerouslySetInnerHTML={{__html:details.instructions}}></p>
+             <p key={details.id} dangerouslySetInnerHTML={{__html:details.instructions}}></p>
          </div>
 
         )}

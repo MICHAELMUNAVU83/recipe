@@ -63,7 +63,7 @@ function Popular() {
       <Splide
           options={{
             perPage: 2,
-            arrows: true,
+            arrows: false,
             pagination: false,
             drag: "free",
             gap: "1rem",
