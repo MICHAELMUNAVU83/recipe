@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams , Link } from "react-router-dom";
 
 function Searched() {
   const [searched, setSearched] = useState([]);
@@ -22,6 +22,7 @@ function Searched() {
         <div key={eachSearched}>
           <img src={eachSearched.image} alt="pic" />
           <p>{eachSearched.title}</p>
+          <Link to={'/recipe/'+ eachSearched.id}>SEE RECIPE</Link>
         </div>
       ))}
     </div>

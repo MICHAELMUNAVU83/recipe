@@ -19,8 +19,9 @@ function Cuisine() {
   return (
     <div className="grid">{cuisine.map(rec=>(
         <div key={rec.id}>
-            <img src={rec.image} alt="rec" />
+            <img src={rec.image} alt="rec"  />
             <p>{rec.title}</p>
+            <Link to={'/recipe/'+ rec.id}>SEE RECIPE</Link>
             
         </div>
 

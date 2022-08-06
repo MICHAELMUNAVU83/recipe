@@ -1,6 +1,7 @@
 import React , {useEffect ,useState} from 'react'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
+import {Link} from "react-router-dom"
 
 
 function Popular() {
@@ -27,9 +28,12 @@ function Popular() {
 
     const renderRecipe = popular.map(recipe =>(
       <SplideSlide key={recipe.id}>
+        
           <div className="card" key={recipe.id}>
-        <p>{recipe.title} </p>
+        <p>{recipe.title} <Link to={'/recipe/'+ recipe.id}>SEE RECIPE</Link> </p>
+        
         <img src={recipe.image} alt="food " />
+       
 
        
 
