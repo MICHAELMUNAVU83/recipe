@@ -30,8 +30,8 @@ function Details() {
         </div>
         <div className="full-recipe">
              <div className="buttons">
-            <button type="button" id="instructions" onClick={()=>{setActive('instructions')}}>Instructions</button>
-            <button type="button" id="ingredients" onClick={()=>{setActive('ingredients')}}>ingredients</button>
+            <button type="button" id="instructions" onClick={()=>{setActive('instructions')}}>INSTRUCTIONS</button>
+            <button type="button" id="ingredients" onClick={()=>{setActive('ingredients')}}>INGREDIENTS</button>
             </div>
         {active==='instructions' && (
              <div className="summary">
@@ -42,9 +42,9 @@ function Details() {
         {active=== 'ingredients' && (
              <div>
              {details.extendedIngredients.map(ingredient =>(
-                     <ul>
+                     <ul key={ingredient.id}className="ulsummary">
                          
-                     <li key={ingredient.id}>{ingredient.original}</li>
+                     <li >{ingredient.original}</li>
      
                      </ul>
                     

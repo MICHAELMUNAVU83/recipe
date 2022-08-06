@@ -6,7 +6,7 @@ function App() {
   return (
     <div >
        <BrowserRouter>
-      <h1>RECIPE</h1>
+      <h1 className="logo">recipes with Trance</h1>
       <Categories />
       <Pages/>
       </BrowserRouter>
