@@ -49,7 +49,7 @@ function Veggie() {
      
     ))
   return (
-    <div className="wrapper">
+    <div className="wrapper vegg">
       <h3>VEGGIES</h3>
       <OnDesktop> 
       <Splide options={{
