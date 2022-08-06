@@ -14,7 +14,7 @@ function Search() {
     }
   return (
     <form className="search-box" onSubmit={submitHandler}>
-        <input className="input-space" type="text" value={input} onChange={handleInput} />
+        <input className="input-space" placeholder="search any recipe" type="text" value={input} onChange={handleInput} />
        <span><button className="search-button" type="button" onClick={submitHandler}> <FaSearch/></button> </span> 
         
     </form>
