@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@200;300&family=Josefin+Sans:wght@100&family=Kanit:ital,wght@1,300;1,400&family=Kdam+Thmor+Pro&family=Lato:wght@300&family=Lobster+Two:ital@1&family=Mouse+Memoirs&family=Noto+Sans:wght@700&family=Roboto+Mono:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Courgette&family=Crete+Round&family=Inter:wght@200;300&family=Josefin+Sans:wght@100&family=Kanit:ital,wght@1,300;1,400&family=Kdam+Thmor+Pro&family=Lato:wght@300&family=Lobster+Two:ital@1&family=Mouse+Memoirs&family=Noto+Sans:wght@700&family=Roboto+Mono:ital,wght@1,500&display=swap');
 nav{
   display: flex;
   justify-content: center;
@@ -7,8 +7,8 @@ nav a{
   margin-right: 15px;
   text-align: center;
   text-decoration: none;
-  background-color: #4db37f;
-  color:#172b4d ;
+  background-color: #172b4d;
+  color:white;
   border-radius: 50%;
   width: 7%;
   height: 6%;
@@ -57,6 +57,13 @@ nav a .categories{
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+
+.wrapper{
+  margin-top: 5%;
+}
+.wrapper h3{
+  text-align: center;
 }
 .popular-veggie-card img{
   width: 18rem;
@@ -146,62 +153,61 @@ nav a .categories{
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-
-
-
-.card{
- height: 25rem;
- border-radius:30px ;
- -webkit-border-radius:30px ;
- -moz-border-radius:30px ;
- -ms-border-radius:30px ;
- -o-border-radius:30px ;
- position: relative;
+.detailsDiv{
+  display: flex;
+  justify-content: space-evenly;
 }
-.detail-img{
-  height: 100px;
-  width: 100px;
 
-}
-.card img{
+.detailsDiv .image-name img{
   height: 20rem;
-  width: 20rem;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
- border-radius: 30px;
- -webkit-border-radius: 30px;
- -moz-border-radius: 30px;
- -ms-border-radius: 30px;
- -o-border-radius: 30px;
+  width: 25rem;
+  margin-right: 20px;
+  margin-left: 20px;
 }
+.detailsDiv .image-name h2{
+  margin-right: 20px;
+  margin-left: 20px;
 
-.wrapper{
-  margin: 4rem 0rem;
 }
-
-.grid{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-gap: 3rem;
+.full-recipe .buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 20px;
 }
-.grid img{
-  width: 100%;
-  border-radius: 2rem;
-  -webkit-border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -ms-border-radius: 2rem;
-  -o-border-radius: 2rem;
+.full-recipe .buttons #instructions{
+  background-color: #4db37f;
+  color: #172b4d;
+  padding: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
 }
-
-.grid a{
+.full-recipe .buttons #ingredients{
+  background-color:#172b4d;
+  color: white;
+  padding: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.full-recipe .summary p{
+  margin-left: 16%;
+  width: 70%;
+ 
+}
+.full-recipe .summary p a{
   text-decoration: none;
-
-}
-.grid h4{
-  text-align: center;
-  padding: 1rem;
+ color: #172b4d;
+ font-family: 'Courgette', cursive;
 
 }

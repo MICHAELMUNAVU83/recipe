@@ -23,13 +23,20 @@ function Searched() {
     exit={{opacity:0}}
     transition= {{duration:0.8 }}
     >
+      <div className="cuisine" >
       {searched.map((eachSearched) => (
-        <div key={eachSearched.id}>
-          <img src={eachSearched.image} alt="pic" />
-          <p>{eachSearched.title}</p>
+        <div className="cuisine-card" key={eachSearched.id}>
+        <img src={eachSearched.image} alt="eachSearched " />
+        <div className="nameAndLink">
+          <p> {eachSearched.title} </p>
           <Link to={'/recipe/'+ eachSearched.id}>SEE RECIPE</Link>
+
+         
         </div>
+        </div>
+       
       ))}
+      </div>
     </motion.div>
   );
 }
