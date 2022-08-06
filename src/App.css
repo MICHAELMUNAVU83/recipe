@@ -235,9 +235,9 @@ nav a .categories{
   .search-box{
    
     position: absolute;
-    top: 16%;
-    left: 19%;
-    width: 60%;
+    top: 20%;
+    left: 10%;
+    width: 70%;
     margin-bottom: 20px;
    
   }
@@ -245,11 +245,11 @@ nav a .categories{
     margin-top: 25%;
   }
   .popular-veggie-card img{
-  width: 12rem;
-  height: 10rem;
+  width: 10rem;
+  height: 8rem;
   }
   .popular-veggie-card .nameAndLink{
-    width: 12rem;
+    width: 10rem;
     height: 105px;
   }
   .popular-veggie-card .nameAndLink p{
@@ -291,7 +291,7 @@ nav a .categories{
   height: 16rem;
   width: 18rem;
   margin-right: 20px;
-  margin-left: 70px;
+  
 }
 .detailsDiv .image-name h2{
 
