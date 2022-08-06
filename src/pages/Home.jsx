@@ -11,9 +11,11 @@ function Home() {
     exit={{opacity:0}}
     transition= {{duration:0.8 }}
      >
+       
       <Search/>
          <Popular/>
       <Veggie/>
+    
     
     </motion.div>
   )
