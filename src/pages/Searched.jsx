@@ -28,9 +28,8 @@ function Searched() {
         <img src={eachSearched.image} alt="eachSearched " />
         <div className="nameAndLink">
           <p> {eachSearched.title} </p>
-          <Link to={'/recipe/'+ eachSearched.id}>SEE RECIPE</Link>
+          <Link to={'/recipe/'+ eachSearched.id}>view recipe</Link>
 
-         
         </div>
         </div>
        

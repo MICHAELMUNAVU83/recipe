@@ -38,7 +38,7 @@ function Popular() {
         <img src={recipe.image} alt="food " />
         <div className="nameAndLink">
           <p> {recipe.title} </p>
-          <Link to={"/recipe/" + recipe.id}>see recipe</Link>
+          <Link to={"/recipe/" + recipe.id}>view recipe</Link>
         </div>
       </div>
     </SplideSlide>

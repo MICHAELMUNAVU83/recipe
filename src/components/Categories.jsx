@@ -25,7 +25,7 @@ function Categories() {
         </NavLink>
         <NavLink to={"/cuisine/chinese"}>
           <GiChopsticks className="categories" />
-          <p>CHINESE</p>
+          <p>Chinese</p>
         </NavLink>
       </nav>
     </div>
