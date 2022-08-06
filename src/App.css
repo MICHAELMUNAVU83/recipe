@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Courgette&family=Crete+Round&family=Inter:wght@200;300&family=Josefin+Sans:wght@100&family=Kanit:ital,wght@1,300;1,400&family=Kdam+Thmor+Pro&family=Lato:wght@300&family=Lobster+Two:ital@1&family=Mouse+Memoirs&family=Noto+Sans:wght@700&family=Roboto+Mono:ital,wght@1,500&display=swap');
-nav{
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Courgette&family=Crete+Round&family=Inter:wght@200;300&family=Josefin+Sans:wght@100&family=Kanit:ital,wght@1,300;1,400&family=Kdam+Thmor+Pro&family=Lato:wght@300&family=Lobster+Two:ital@1&family=Mouse+Memoirs&family=Nothing+You+Could+Do&family=Noto+Sans:wght@700&family=Roboto+Mono:ital,wght@1,500&display=swap');nav{
   display: flex;
   justify-content: center;
+}
+.logo{
+  font-family: 'Nothing You Could Do', cursive;
+  color: #172b4d;
 }
 nav a{
   margin-right: 15px;
@@ -17,6 +20,7 @@ nav a{
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+
 nav a .categories{
   width: 100%;
   height: 2rem;
@@ -39,6 +43,7 @@ nav a .categories{
 .input-space{
   border: none;
   width: 100%;
+  font-family: 'Amaranth', sans-serif;
   outline: none;
   border-radius: 2rem;
   -webkit-border-radius: 2rem;
@@ -63,6 +68,11 @@ nav a .categories{
 }
 .wrapper h3{
   text-align: center;
+  font-family: 'Crete Round', serif;
+  color: #172b4d;
+  font-size: 40px;
+  text-decoration :underline;
+
 }
 .popular-veggie-card img{
   width: 18rem;
@@ -84,6 +94,7 @@ nav a .categories{
   margin-left: 20px;
   display: flex;
   font-size:20px;
+color: #172b4d;
   text-align: center;
  font-family: 'Lobster Two', cursive;
 }
@@ -92,8 +103,9 @@ nav a .categories{
   background-color:#172b4d  ;
   color: white;
   width: 50%;
+  font-family: 'Amaranth', sans-serif;
   text-align: center;
-  padding: 5px;
+  padding: 8px;
   margin-left: 70px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -132,6 +144,10 @@ nav a .categories{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 .cuisine-card .nameAndLink p{
   margin-left: 20px;
@@ -142,6 +158,7 @@ nav a .categories{
   text-decoration: none;
   background-color:#172b4d  ;
   color: white;
+  font-family: 'Amaranth', sans-serif;
   width: 50%;
   text-align: center;
   padding: 5px;
@@ -170,6 +187,7 @@ nav a .categories{
 }
 .detailsDiv .image-name h2{
   margin-right: 20px;
+  font-family: 'Crete Round', serif;
   margin-left: 20px;
  color: #172b4d;
 
@@ -185,9 +203,10 @@ nav a .categories{
   background-color: #4db37f;
   color: #172b4d;
   padding: 20px;
-  font-weight: bold;
+  font-weight: bolder;
   border: none;
   border-radius: 50px;
+  font-family: 'Lato', sans-serif;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
@@ -195,6 +214,7 @@ nav a .categories{
 }
 .full-recipe .buttons #ingredients{
   background-color:#172b4d;
+  font-family: 'Lato', sans-serif;
   color: white;
   padding: 20px;
   font-weight: bold;
@@ -208,7 +228,11 @@ nav a .categories{
 .full-recipe .summary p{
   margin-left: 16%;
   width: 70%;
+  font-family: 'Kdam Thmor Pro', sans-serif;
  
+}
+.ulsummary{
+  font-family: 'Kdam Thmor Pro', sans-serif;
 }
 .full-recipe .summary p a{
   text-decoration: none;
@@ -241,11 +265,11 @@ nav a .categories{
     margin-top: 5%;
   }
   .popular-veggie-card img{
-  width: 22rem;
+  width: 20rem;
   height: 18rem;
   }
   .popular-veggie-card .nameAndLink{
-    width: 22rem;
+    width: 20rem;
     height: 125px;
   }
   .popular-veggie-card .nameAndLink p{
@@ -255,7 +279,7 @@ nav a .categories{
   .popular-veggie-card .nameAndLink a{
    
     width: 50%;
-    padding: 5px;
+    padding: 7px;
     margin-left: 30px;
   }
   .cuisine-card{
