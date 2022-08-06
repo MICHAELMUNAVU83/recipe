@@ -13,12 +13,14 @@ function Search() {
         navigate('/searched/'+input)
     }
   return (
-    <form onSubmit={submitHandler}>
-        <input type="text" value={input} onChange={handleInput} />
-        <button type="button" onClick={submitHandler}> SEARCH</button>
+    <form className="search-box" onSubmit={submitHandler}>
+        <input className="input-space" type="text" value={input} onChange={handleInput} />
+       <span><button className="search-button" type="button" onClick={submitHandler}> <FaSearch/></button> </span> 
         
     </form>
+    
   )
 }
+
 
 export default Search

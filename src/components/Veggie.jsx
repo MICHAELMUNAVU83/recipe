@@ -28,14 +28,13 @@ function Veggie() {
 
     const renderRecipe = veggie.map(recipe =>(
       <SplideSlide key={recipe.id}>
-          <div className="card" key={recipe.id}>
-        <p>{recipe.title} <Link to={'/recipe/'+ recipe.id}>SEE RECIPE</Link> </p>
+        <div className="popular-veggie-card" key={recipe.id}>
         <img src={recipe.image} alt="food " />
-
-       
-
-       </div>
-
+        <div className="nameAndLink">
+          <p> {recipe.title} </p>
+          <Link to={"/recipe/" + recipe.id}>see recipe</Link>
+        </div>
+      </div>
       </SplideSlide>
     
      
