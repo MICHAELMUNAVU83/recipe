@@ -17,7 +17,11 @@ function Cuisine() {
         setCuisine(recipe.results)
     }
   return (
-    <div className="grid">{cuisine.map(rec=>(
+    <motion.div  animate ={{opacity:1}}
+    initial={{opacity:0}}
+    exit={{opacity:0}}
+    transition= {{duration:0.8 }}>
+       <div className="grid">{cuisine.map(rec=>(
         <div key={rec.id}>
             <img src={rec.image} alt="rec"  />
             <p>{rec.title}</p>
@@ -26,6 +30,9 @@ function Cuisine() {
         </div>
 
     ))}</div>
+
+    </motion.div>
+   
   )
 }
 
