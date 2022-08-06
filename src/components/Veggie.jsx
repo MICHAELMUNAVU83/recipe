@@ -67,7 +67,7 @@ function Veggie() {
       </OnDesktop>
       <OnMobile>
       <Splide options={{
-       perPage: 2,
+       perPage: 1,
        arrows: false,
        pagination: false,
        drag: "free",
