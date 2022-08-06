@@ -15,7 +15,6 @@ function Cuisine() {
       `https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&number=12&cuisine=${name}`
     );
     const recipe = await data.json();
-    console.log(recipe.results);
     setCuisine(recipe.results);
   };
   return (
@@ -31,7 +30,7 @@ function Cuisine() {
             <img src={rec.image} alt="rec " />
             <div className="nameAndLink">
               <p> {rec.title} </p>
-              <Link to={"/recipe/" + rec.id}>SEE RECIPE</Link>
+              <Link to={"/recipe/" + rec.id}>see recipe</Link>
             </div>
           </div>
         ))}

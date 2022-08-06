@@ -163,10 +163,16 @@ nav a .categories{
   width: 25rem;
   margin-right: 20px;
   margin-left: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 .detailsDiv .image-name h2{
   margin-right: 20px;
   margin-left: 20px;
+ color: #172b4d;
 
 }
 .full-recipe .buttons{
@@ -209,5 +215,93 @@ nav a .categories{
   text-decoration: none;
  color: #172b4d;
  font-family: 'Courgette', cursive;
+
+}
+@media only screen and (max-width: 740px){
+ 
+  nav a{
+    margin-right: 5px;
+    width: 14%;
+    height: 7%;
+    
+  }
+  nav a p{
+    font-size: 10px;
+  }
+  nav a .categories{
+    width: 80%;
+    height: 0.5rem;
+  }
+  .search-box{
+   
+    position: absolute;
+    top: 16%;
+    left: 19%;
+    width: 60%;
+    margin-bottom: 20px;
+   
+  }
+  .wrapper{
+    margin-top: 25%;
+  }
+  .popular-veggie-card img{
+  width: 12rem;
+  height: 10rem;
+  }
+  .popular-veggie-card .nameAndLink{
+    width: 12rem;
+    height: 105px;
+  }
+  .popular-veggie-card .nameAndLink p{
+    display: flex;
+    font-size:15px;
+  }
+  .popular-veggie-card .nameAndLink a{
+   
+    width: 50%;
+    padding: 5px;
+    margin-left: 50px;
+  }
+  .cuisine-card{
+    width: 45%;
+  }
+  .cuisine-card .nameAndLink{
+   
+    height: 120px;
+   
+  }
+  .cuisine-card .nameAndLink p{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+  }
+  .cuisine-card .nameAndLink a{
+    margin-left: 25%;
+    padding: 7px;
+  
+  }
+  .detailsDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+.detailsDiv .image-name img{
+  height: 16rem;
+  width: 18rem;
+  margin-right: 20px;
+  margin-left: 70px;
+}
+.detailsDiv .image-name h2{
+
+ display: flex;
+ justify-content: center;
+}
+.full-recipe .summary p{
+  margin-left: 5%;
+  width: 90%;
+ 
+}
 
 }
