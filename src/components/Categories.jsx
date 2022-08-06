@@ -8,23 +8,23 @@ function Categories() {
     <div>
       <nav>
         <NavLink to={"/"}>
-          <FaHome />
+          <FaHome className="categories" />
           <h4>HOME</h4>
         </NavLink>
         <NavLink to={"/cuisine/italian"}>
-          <FaPizzaSlice />
+          <FaPizzaSlice className="categories" />
           <h4>Italian</h4>
         </NavLink>
         <NavLink to={"/cuisine/american"}>
-          <FaHamburger />
+          <FaHamburger className="categories" />
           <h4>American</h4>
         </NavLink>
         <NavLink to={"/cuisine/thai"}>
-          <GiNoodles />
+          <GiNoodles className="categories" />
           <h4>Thai</h4>
         </NavLink>
         <NavLink to={"/cuisine/chinese"}>
-          <GiChopsticks />
+          <GiChopsticks className="categories" />
           <h4>CHINESE</h4>
         </NavLink>
       </nav>
